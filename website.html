@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navBar {
+            background-color: rgb(134, 180, 232);
+            width: 100%;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        #menu {
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        #hospital {
+            width:1250px;
+            height:680px;
+        }
+
+        #quotes {
+            font-size: 16px;
+        }
+
+        #quote {
+            border: 2px solid black;
+            font-size: 25px;
+        }
+
+        #form {
+            border:1px solid black;
+            width:650px;
+            font-size:20px;
+        }
+
+        #contact {
+            border: 1px solid black;
+            background-color: bisque;
+        }
+
+        #footer {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Menu for the website using table tag-->
+    <header>
+        <table id="navBar">
+            <tr>
+                <td><img src="./logo.png" id="logo"></td>
+                <td id="menu">Hyderabad Hospital</td>
+                <th><a href="#" id="menu">Home</a></th>
+                <th><a href="#quotes" id="menu">About</a></th>
+                <th><a href="#form" id="menu">Services</a></th>
+                <th><a href="mailto:hospital@gmail.com" id="menu">Contact</a></th>
+            </tr>
+        </table>
+    </header>
+    <br>
+    <!--Image of the hospital-->
+    <img src="./hospitalImage.png" id="hospital">
+    <br><br>
+
+    <!--Quotation cards using table tag-->
+    <div>
+        <marquee>
+        <table id="quotes">
+            <tr>
+                <!--Card1-->
+                <td style="width: 300px;">
+                    <div id="quote"><center>
+                        When <b style="color: rgb(237, 58, 115);">"I"</b><br>
+                        is replaced by <b style="color: rgb(237, 58, 115);">"We"</b><br>
+                        even illness<br> 
+                        becomes <b style="color: rgb(237, 58, 115);">Wellness!</b></center>
+                    </div>
+                </td>
+
+                <!--Card2-->
+                <td style="width: 310px;">
+                    <div id="quote"><center>
+                        "In the world of<br>
+                        <b style="color: cadetblue;">health</b>, every small<br>
+                        <b style="color: cadetblue;">act of kindness</b> can make<br>
+                        a big difference"</center>
+                    </div>
+                </td>
+
+                <!--Card3-->
+                <td style="width: 320px;">
+                    <div id="quote"><center>
+                        "Helping people<br>
+                        at their most<br>
+                        <b style="color: chocolate;">Vulnerable</b> time<br>
+                        is a <b style="color: chocolate;">Privilege</b>"</center>
+                    </div>
+                </td>
+
+                <!--Card4-->
+                <td style="width: 330px;">
+                    <div id="quote"><center>
+                        "Here doctors have a big<br>
+                        <b style="color: rgb(88, 167, 104);">Responsibility</b> to bring<br>
+                        smiles on the faces of<br>
+                        suffering <b style="color: rgb(88, 167, 104);">Humanity</b>"</center>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </marquee>
+    </div>
+    <br>
+
+    
+    <div >
+        <table>
+            <tr>
+                <td id="form">
+                &nbsp&nbsp<h2>For consulation please fill the below form</h2>&nbsp&nbsp&nbsp&nbsp
+                <!--For consultation form using form tag-->
+                <form>
+                    &nbsp&nbsp<label for="name">Patient's Full Name<b style="color: red;">*</b>:</label>
+                    <input id="name" placeholder="Enter your full name" required>
+                    <br><br>
+
+                    &nbsp&nbsp <label for="dob">Date of Birth<b style="color: red;">*</b>:</label>
+                    <input type="date" pattern="" id="dob" required>
+                    <br><br>
+
+                    &nbsp&nbsp <label for="phone">Phone number<b style="color: red;"s>*</b>:</label>
+                    <input type="tel" id="phone" placeholder="0000000000" required>
+                    <br><br>
+
+                    &nbsp&nbsp <label for="email">Email Id:</label>
+                    <input type="email" id="email" placeholder="Ex: name@gmail.com">
+                    <br><br>
+
+                    &nbsp&nbsp <label for="reason">Reason for consultation<b style="color: red;"s>*</b>:</label>
+                    <select id="reason" required>
+                        <option>Please select an option</option>
+                        <option value="1">Regular Checkup</option>
+                        <option value="2">Cardialogist(Heart)</option>
+                        <option value="3">Orthologist(Bones)</option>
+                        <option value="4">Gynacologist(Female)</option>
+                        <option value="5">Pediatrician(Infant/Child)</option>
+                    </select>
+                    <br><br>
+
+                    &nbsp&nbsp <label for="date">Desired date and time of consulation</label><br>&nbsp&nbsp
+                    <input type="date" id="date">&nbsp
+                    <input type="time" id="date">
+                    <br><br>
+                    &nbsp&nbsp&nbsp<button type="submit">Book Consulation</button>
+                    <button type="reset">Book Another Consulation</button>
+                    <p style="font-size: 13px;">&nbsp&nbsp<b style="color: red;"s>*</b> indicates compulsory fields to fill</p>
+                </form> 
+                </td>
+                &nbsp&nbsp
+
+                <!--For embedding the location using iframe tag-->
+                <td>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487295.22581163223!2d78.07838586924265!3d17.412077907948387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1751958021645!5m2!1sen!2sin" 
+                        width="600" height="450" style="border:0;" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <!--Contact Info-->
+    <center><div id="contact">
+        
+    </div></center>
+    <br>
+
+    <!--Footer for including copyrights for the website-->
+    <footer id="footer">
+        <center>
+        <p>For queries, contact to our official email id
+            <img src="./mail.png" width="20px" height="20px">
+            <a href="mailto:hospital@gmail.com">hospital@gmail.com</a>
+        </p>
+        <p>Connect us on our social media platform 
+            <img src="./instagramLogo.png" width="25px" height="25px">
+            <a href="https://instagram.com">Hyderabad_Hospital_Lifes</a>
+        </p>
+       &nbsp&nbsp<b>&copy</b>2025 Hyderabad Hospital, Hyderabad, Telangana, India
+       </center>
+    </footer>
+</body>
+</html>
